@@ -1,0 +1,16 @@
+cython
+pandas
+numpy
+ipykernel
+scikit-learn
+nltk
+gensim
+transformers
+datasets
+torch
+joblib
+accelerate
+imblearn 
+torchvision
+matplotlib
+seaborn
