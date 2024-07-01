@@ -4,7 +4,7 @@ numpy
 ipykernel
 scikit-learn
 nltk
-gensim
+spacy
 transformers
 datasets
 torch
