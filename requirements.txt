@@ -14,3 +14,4 @@ imblearn
 torchvision
 matplotlib
 seaborn
+gdown
