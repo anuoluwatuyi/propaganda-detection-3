@@ -5,6 +5,7 @@ import numpy as np
 import os
 import logging
 import requests
+import gdown
 from collections import defaultdict
 
 logger = logging.getLogger(__name__)
@@ -18,16 +19,12 @@ VOCAB_SIZE = 3000000  # Number of words in Google News pre-trained model
 
 # Download the pre-trained Google News word2vec model if not already downloaded
 def download_pretrained_model():
-    url = "https://s3.amazonaws.com/dl4j-distribution/GoogleNews-vectors-negative300.bin.gz"
-    local_filename = url.split('/')[-1]
-    if not os.path.isfile(local_filename):
+    url = "https://drive.google.com/uc?id=0B7XkCwpI5KDYNlNUTTlSS21pQmM"
+    output = "GoogleNews-vectors-negative300.bin.gz"
+    if not os.path.isfile(output):
         logger.info(f"Downloading {url}...")
-        response = requests.get(url, stream=True)
-        with open(local_filename, 'wb') as f:
-            for chunk in response.iter_content(chunk_size=1024):
-                if chunk:
-                    f.write(chunk)
-    return local_filename
+        gdown.download(url, output, quiet=False)
+    return output
 
 # Load pre-trained word2vec model
 def load_word2vec_model(filepath):
