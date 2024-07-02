@@ -26,7 +26,6 @@ def download_pretrained_model():
         gdown.download(url, output, quiet=False)
     return output
 
-# Load pre-trained word2vec model
 def load_word2vec_model(filepath):
     logger.info("Loading pre-trained word2vec model...")
     word_vectors = {}
@@ -45,6 +44,7 @@ def load_word2vec_model(filepath):
                     word.append(ch)
             word_vectors[word] = np.frombuffer(f.read(binary_len), dtype='float32')
     return word_vectors
+
 
 # Implement the skip-gram model
 def skipgram_model(word_vectors, context_words, target_word, vector_size=VECTOR_SIZE, learning_rate=0.01):
