@@ -1,1 +1,6 @@
 pdenv/
+GoogleNews-vectors-negative300.bin.gz
+scripts/GoogleNews-vectors-negative300.bin.gz
+propaganda_detection_WIP.ipynb
+text.ipynb
+scripts/
