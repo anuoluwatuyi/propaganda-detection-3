@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Propaganda_Detection.aux
+The style file: agsm.bst
+Database file #1: propaganda.bib
+You've used 9 entries,
+            2909 wiz_defined-function locations,
+            720 strings with 7731 characters,
+and the built_in function-call counts, 45948 in all, are:
+= -- 7496
+> -- 653
+< -- 0
++ -- 3621
+- -- 199
+* -- 4061
+:= -- 9067
+add.period$ -- 9
+call.type$ -- 9
+change.case$ -- 126
+chr.to.int$ -- 9
+cite$ -- 9
+duplicate$ -- 161
+empty$ -- 333
+format.name$ -- 231
+if$ -- 8284
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 8
+newline$ -- 39
+num.names$ -- 98
+pop$ -- 35
+preamble$ -- 1
+purify$ -- 135
+quote$ -- 0
+skip$ -- 139
+stack$ -- 0
+substring$ -- 10675
+swap$ -- 41
+text.length$ -- 126
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 36
+warning$ -- 0
+while$ -- 206
+width$ -- 0
+write$ -- 136
