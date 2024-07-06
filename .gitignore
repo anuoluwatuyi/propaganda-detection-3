@@ -3,3 +3,6 @@ GoogleNews-vectors-negative300.bin.gz
 scripts/GoogleNews-vectors-negative300.bin.gz
 propaganda_detection_WIP.ipynb
 text.ipynb
+report/Propaganda_Detection*
+!report/propaganda_dection.pdf
+!report/propaganda_dection.tex
