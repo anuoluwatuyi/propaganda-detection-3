@@ -127,23 +127,3 @@ class Word2VecModel:
         top_indices = np.argsort(similar_words)[-topn:][::-1]
         return [(self.word_vectors.index_to_key[index], similar_words[index]) for index in top_indices]
 
-# Usage example
-if __name__ == "__main__":
-    model = Word2VecModel()
-    model_file = model.download_pretrained_model()
-    model.load_word2vec_model(model_file)
-    
-    context_words = ['king', 'man']
-    target_word = 'queen'
-    
-    model.skipgram_model(context_words, target_word)
-    logger.info("Skip-gram model trained.")
-    
-    model.cbow_model(context_words, target_word)
-    logger.info("CBOW model trained.")
-    
-    logger.info("Most similar words to 'queen' in Skip-gram model:")
-    print(model.most_similar_skipgram('queen'))
-    
-    logger.info("Most similar words to 'queen' in CBOW model:")
-    print(model.most_similar_cbow('queen'))
